@@ -65,6 +65,9 @@
 		5070FFC92087B77700C01DA5 /* XmlDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5070FF912087B77600C01DA5 /* XmlDeclaration.swift */; };
 		5070FFCA2087B77700C01DA5 /* XmlTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5070FF922087B77600C01DA5 /* XmlTreeBuilder.swift */; };
 		5070FFCD2087C43600C01DA5 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5070FFCC2087C43600C01DA5 /* Files.swift */; };
+		50CE71702087CAFE0065FD16 /* LSFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE716F2087CAFE0065FD16 /* LSFileManager.swift */; };
+		50CE71722087CF650065FD16 /* LSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE71712087CF650065FD16 /* LSRequest.swift */; };
+		50CE71742087D21E0065FD16 /* LSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE71732087D21E0065FD16 /* LSImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -144,6 +147,9 @@
 		5070FF912087B77600C01DA5 /* XmlDeclaration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmlDeclaration.swift; sourceTree = "<group>"; };
 		5070FF922087B77600C01DA5 /* XmlTreeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmlTreeBuilder.swift; sourceTree = "<group>"; };
 		5070FFCC2087C43600C01DA5 /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		50CE716F2087CAFE0065FD16 /* LSFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSFileManager.swift; sourceTree = "<group>"; };
+		50CE71712087CF650065FD16 /* LSRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSRequest.swift; sourceTree = "<group>"; };
+		50CE71732087D21E0065FD16 /* LSImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,9 @@
 		5070FF4D2087B76000C01DA5 /* light_shot */ = {
 			isa = PBXGroup;
 			children = (
+				50CE71732087D21E0065FD16 /* LSImage.swift */,
+				50CE71712087CF650065FD16 /* LSRequest.swift */,
+				50CE716F2087CAFE0065FD16 /* LSFileManager.swift */,
 				5070FF4E2087B76000C01DA5 /* main.swift */,
 			);
 			path = light_shot;
@@ -286,7 +295,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Snopia;
 				TargetAttributes = {
 					5070FF4A2087B76000C01DA5 = {
@@ -334,6 +343,7 @@
 				5070FFA52087B77700C01DA5 /* Evaluator.swift in Sources */,
 				5070FFC22087B77700C01DA5 /* Tokeniser.swift in Sources */,
 				5070FFA62087B77700C01DA5 /* Exception.swift in Sources */,
+				50CE71742087D21E0065FD16 /* LSImage.swift in Sources */,
 				5070FF972087B77700C01DA5 /* CharacterExt.swift in Sources */,
 				5070FFBF2087B77700C01DA5 /* Tag.swift in Sources */,
 				5070FFAC2087B77700C01DA5 /* NodeTraversor.swift in Sources */,
@@ -359,6 +369,7 @@
 				5070FFA22087B77700C01DA5 /* Element.swift in Sources */,
 				5070FFB72087B77700C01DA5 /* SerializationException.swift in Sources */,
 				5070FFB22087B77700C01DA5 /* Parser.swift in Sources */,
+				50CE71722087CF650065FD16 /* LSRequest.swift in Sources */,
 				5070FFCA2087B77700C01DA5 /* XmlTreeBuilder.swift in Sources */,
 				5070FF952087B77700C01DA5 /* Attributes.swift in Sources */,
 				5070FFB42087B77700C01DA5 /* Pattern.swift in Sources */,
@@ -375,6 +386,7 @@
 				5070FFA12087B77700C01DA5 /* DocumentType.swift in Sources */,
 				5070FFA02087B77700C01DA5 /* Document.swift in Sources */,
 				5070FFC52087B77700C01DA5 /* TreeBuilder.swift in Sources */,
+				50CE71702087CAFE0065FD16 /* LSFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +407,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -402,6 +415,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -452,6 +466,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -459,6 +474,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
