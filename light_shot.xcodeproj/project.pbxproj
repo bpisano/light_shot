@@ -68,6 +68,7 @@
 		50CE71702087CAFE0065FD16 /* LSFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE716F2087CAFE0065FD16 /* LSFileManager.swift */; };
 		50CE71722087CF650065FD16 /* LSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE71712087CF650065FD16 /* LSRequest.swift */; };
 		50CE71742087D21E0065FD16 /* LSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE71732087D21E0065FD16 /* LSImage.swift */; };
+		50CE71762087DC600065FD16 /* LSNameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE71752087DC600065FD16 /* LSNameGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -150,6 +151,7 @@
 		50CE716F2087CAFE0065FD16 /* LSFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSFileManager.swift; sourceTree = "<group>"; };
 		50CE71712087CF650065FD16 /* LSRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSRequest.swift; sourceTree = "<group>"; };
 		50CE71732087D21E0065FD16 /* LSImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSImage.swift; sourceTree = "<group>"; };
+		50CE71752087DC600065FD16 /* LSNameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNameGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				50CE71732087D21E0065FD16 /* LSImage.swift */,
 				50CE71712087CF650065FD16 /* LSRequest.swift */,
 				50CE716F2087CAFE0065FD16 /* LSFileManager.swift */,
+				50CE71752087DC600065FD16 /* LSNameGenerator.swift */,
 				5070FF4E2087B76000C01DA5 /* main.swift */,
 			);
 			path = light_shot;
@@ -383,6 +386,7 @@
 				5070FFAA2087B77700C01DA5 /* HttpStatusException.swift in Sources */,
 				5070FFA72087B77700C01DA5 /* FormElement.swift in Sources */,
 				5070FF932087B77700C01DA5 /* ArrayExt.swift in Sources */,
+				50CE71762087DC600065FD16 /* LSNameGenerator.swift in Sources */,
 				5070FFA12087B77700C01DA5 /* DocumentType.swift in Sources */,
 				5070FFA02087B77700C01DA5 /* Document.swift in Sources */,
 				5070FFC52087B77700C01DA5 /* TreeBuilder.swift in Sources */,

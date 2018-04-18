@@ -15,6 +15,10 @@ do {
     exit(0)
 }
 
-if let image = LSRequest().getImageData(url: "https://prnt.sc/11c2d4") {
-    LSFileManager().addToDefaultFolder(image: image)
+LSNameGenerator().generate(len: 6) { (name) in
+    if var image = LSRequest().getImageData(url: "https://prnt.sc/\(name)") {
+        print("Image found for name : \(name)")
+        image.name = name + ".png"
+        LSFileManager().addToDefaultFolder(image: image)
+    }
 }
